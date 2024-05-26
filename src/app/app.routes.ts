@@ -6,13 +6,19 @@ import { ContactanosComponent } from'./paginas/contactanos/contactanos.component
 import { CarritoComponent } from './paginas/carrito/carrito.component';
 import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagina-no-encontrada.component';
 import {DetallesComponent} from "./paginas/detalles/detalles.component";
+import { AgregarProductoComponent } from './paginas/agregar-producto/agregar-producto.component';
+import { LoginComponent } from './paginas/login/login.component';
 export const routes: Routes = [
     { path: 'inicio', component: InicioComponent },
     { path: 'tienda', component: TiendaComponent },
     { path: 'nosotros', component: NosotrosComponent },
     { path: 'contactanos', component: ContactanosComponent },
     { path: 'carrito', component: CarritoComponent },
+    { path: 'add-product', component: AgregarProductoComponent },
+    { path: 'login', component: LoginComponent },
     { path: 'detalles/:id', component: DetallesComponent},
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
-    { path: '**', component: PaginaNoEncontradaComponent }
+    { path: '**', component: PaginaNoEncontradaComponent },
+    { path: '', component: InicioComponent },
+    { path: '**', redirectTo: '' }
 ];

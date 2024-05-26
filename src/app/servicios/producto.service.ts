@@ -9,6 +9,10 @@ import { OnInit } from '@angular/core';
 export class ProductoService {
   url = 'https://fakestoreapi.com/products';
   constructor( private http: HttpClient ){}
+
+  agregarProducto(product: Product){
+    return this.http.post<Product>(`${this.url}/productos`, product);
+  }
    
   obtenerTodosLosProductos(): Observable<Product[]>{ 
     return this.http.get<Product[]>(this.url).pipe(

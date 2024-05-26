@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-
+import { AutenticacionService } from '../../servicios/autenticacion.service';
+import { CommonModule } from '@angular/common';
+import { LoginComponent } from '../login/login.component';
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [],
+  imports: [ CommonModule, LoginComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.scss'
 })
 export class InicioComponent {
+  constructor(public autenticacionService: AutenticacionService) { }
 
+  logout() {
+    this.autenticacionService.logout();
+  }
 }
