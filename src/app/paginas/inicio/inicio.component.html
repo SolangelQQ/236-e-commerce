@@ -1,10 +1,11 @@
 <h1>Bienvenido a la Tienda</h1>
-
+<!-- 
 <p *ngIf="autenticacionService.isLoggedIn()">Usuario logueado: {{ autenticacionService.getRole() }}</p>
 <button (click)="logout()" *ngIf="autenticacionService.isLoggedIn()">Logout</button>
 
-<a routerLink="/add-product" *ngIf="autenticacionService.getRole() === 'admin'">Agregar Producto</a>
+<a routerLink="/add-product" *ngIf="autenticacionService.getRole() === 'admin'">Agregar Producto</a> -->
 
-<p *ngIf="!autenticacionService.isLoggedIn()">
-  <a routerLink="/login">Login</a>
-</p>
+<!-- <p *ngIf="!autenticacionService.isLoggedIn()"> -->
+  <a [routerLink]="['login']">Sign in</a>
+  <a [routerLink]="['login']">Sign up</a>
+<!-- </p> -->

@@ -18,7 +18,5 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'detalles/:id', component: DetallesComponent},
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
-    { path: '**', component: PaginaNoEncontradaComponent },
-    { path: '', component: InicioComponent },
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: 'inicio', pathMatch: 'full' },
 ];
