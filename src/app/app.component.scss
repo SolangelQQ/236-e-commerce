@@ -1,6 +1,18 @@
 .topnav {
-    background-color: #333;
+    background-color: rgba($color: #333, $alpha: 0.4);
     overflow: hidden;
+    justify-content: center;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
+
+.menu-cabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
 }
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -20,4 +32,20 @@
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+.btn-primary {
+  border: none;
+  background-color: white;
+  padding: .5rem;
+  border-radius: 2rem;
+}
+
+.btn-primary:hover {
+  background-color: rgba($color: #333, $alpha: 0.4);
+}
+
+.bg-danger {
+  border-radius: 2rem;
+  margin-left: 0.5rem;
 }
