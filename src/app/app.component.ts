@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CarritoService } from './servicios/carrito.service';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,8 @@ import { CarritoService } from './servicios/carrito.service';
   imports: [RouterOutlet, RouterLink,
     RouterLinkActive],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  
 })
 export class AppComponent implements OnInit{
   title = 'mi-tienda';

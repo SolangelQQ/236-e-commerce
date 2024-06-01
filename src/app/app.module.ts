@@ -10,14 +10,17 @@
 // // import { FilterPipe } from './shared/filter.pipe';
 // import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+// import { provideHttpClient } from '@angular/core';
+
 // @NgModule({
-  //declarations: [
-    //AppComponent,
-    // HeaderComponent,
-    //CartComponent,
-    //ProductoComponent
-    // FilterPipe
-  //],
+//   declarations: [
+//     AppComponent,
+//     HeaderComponent,
+//     CartComponent,
+//     ProductoComponent
+//     FilterPipe
+//   ],
 //   imports: [
 //     BrowserModule,
 //     // AppRoutingModule,
