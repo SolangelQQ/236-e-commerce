@@ -11,7 +11,7 @@ export class ProductoService {
   constructor( private http: HttpClient ){}
 
   agregarProducto(product: Product){
-    return this.http.post<Product>(`${this.url}/productos`, product);
+    return this.http.post<Product>(this.url, product);
   }
    
   obtenerTodosLosProductos(): Observable<Product[]>{ 
@@ -26,7 +26,6 @@ export class ProductoService {
     // tslint:disable-next-line
     console.log(firstName, lastName, email);
   }
-
   // ngOnInit(): void {
   //     this.
   // }

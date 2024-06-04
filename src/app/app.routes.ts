@@ -8,6 +8,7 @@ import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagi
 import {DetallesComponent} from "./paginas/detalles/detalles.component";
 import { AgregarProductoComponent } from './paginas/agregar-producto/agregar-producto.component';
 import { LoginComponent } from './paginas/login/login.component';
+import { RegistroComponent } from './paginas/registro/registro.component';
 export const routes: Routes = [
     { path: 'inicio', component: InicioComponent },
     { path: 'tienda', component: TiendaComponent },
@@ -17,6 +18,7 @@ export const routes: Routes = [
     { path: 'add-product', component: AgregarProductoComponent },
     { path: 'login', component: LoginComponent },
     { path: 'detalles/:id', component: DetallesComponent},
+    { path: 'registro', component: RegistroComponent},
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
     { path: '**', redirectTo: 'inicio', pathMatch: 'full' },
 ];
